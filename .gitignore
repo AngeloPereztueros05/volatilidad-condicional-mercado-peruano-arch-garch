@@ -1,0 +1,17 @@
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos temporales
+__pycache__/
+*.py[cod]
+
+# Variables privadas
+.env
+.env.*
+!.env.example
+
+# Configuración local y archivos del sistema
+.vscode/
+.DS_Store
+Thumbs.db
