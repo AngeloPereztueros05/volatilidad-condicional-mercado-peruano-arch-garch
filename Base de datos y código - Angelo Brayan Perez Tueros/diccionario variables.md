@@ -9,13 +9,15 @@
 
 ## 2. Variables principales
 
-| Nombre de variable | Identificador | Definición | Unidad | Frecuencia | Fuente |
-|---|---|---|---|---|---|
-| Índice bursátil peruano | SPBVGPT | S&P/BVL Peru General. Valor de cierre identificado en la API de índices. | Puntos de índice | Diaria, por verificar para toda la cobertura | SMV |
-| Índice bursátil BCRP | PD38026MD | Índice General Bursátil BVL. | Por verificar | Diaria, por verificar | BCRP |
-| Tipo de cambio | PD04638PD | Tipo de cambio interbancario, venta. | Soles por dólar estadounidense, según denominación de la serie | Diaria | BCRP |
-| Tasa de referencia | PD12301MD | Tasa de referencia de la política monetaria. | Porcentaje, por verificar | Diaria | BCRP |
-| Índice VIX | VIXCLS | Índice de volatilidad VIX. | Puntos del índice | Diaria | FRED / CBOE |
+| Nombre de variable | Identificador | Definición | Unidad | Frecuencia | Fuente | URL o endpoint | Estado de verificación |
+|---|---|---|---|---|---|---|---|
+| Índice bursátil peruano | SPBLPGPT | S&P/BVL Peru General. Valor de cierre identificado en la API de índices. | Puntos de índice | Diaria | SMV | https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=DD/MM/YYYY | Parcial |
+| Índice bursátil BCRP | PD38026MD | Índice General Bursátil BVL. | VERIFICAR | Diaria, por verificar | BCRP | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD38026MD/json/2010-1-1/2025-12-31/esp | Parcial |
+| Tipo de cambio | PD04638PD | Tipo de cambio interbancario, venta. | Soles por dólar estadounidense | Diaria | BCRP | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/2010-1-1/2025-12-31/esp | Parcial |
+| Tasa de referencia | PD12301MD | Tasa de referencia de la política monetaria. | Porcentaje | Diaria | BCRP | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD12301MD/json/2010-1-1/2025-12-31/esp | Parcial |
+| Índice VIX | VIXCLS | Índice de volatilidad VIX. | Puntos del índice | Diaria | FRED / CBOE | https://fred.stlouisfed.org/series/VIXCLS | Pendiente |
+
+**Nota:** El estado «Parcial» indica que la serie ha sido identificada, pero aún requiere verificar aspectos como su cobertura histórica, unidades o integración. El estado «Pendiente» indica que todavía no se ha confirmado el procedimiento de descarga y tratamiento de la variable.
 
 ## 3. Variables derivadas
 
@@ -25,7 +27,7 @@
 | Volatilidad condicional | Varianza condicional estimada del rendimiento | Modelos ARCH/GARCH | Pendiente |
 | Volatilidad condicional (desviación estándar) | Raíz cuadrada de la varianza condicional | √ht | Pendiente |
 
-## 4. Identificación de campos de la API SMV
+## 4. Identificación de campos de la API de índices SMV
 
 | Campo | Significado |
 |---|---|
@@ -39,7 +41,9 @@
 | Maxima | Valor máximo |
 | Minima | Valor mínimo |
 
-El índice objetivo identificado es `SPBVGPT`, correspondiente a S&P/BVL Peru General.
+El índice objetivo identificado es `SPBLPGPT`, correspondiente a S&P/BVL Peru General. En la prueba piloto de enero de 2017, el índice fue identificado en las 22 consultas individuales realizadas, todas con HTTP 200 y código de respuesta SMV 0.
+
+**Nota metodológica:** La identificación del índice `SPBLPGPT` no implica que su cobertura histórica diaria para todo el periodo 2010–2025 esté confirmada. Antes de utilizarlo en el análisis econométrico, se verificará la disponibilidad de observaciones, la continuidad de las fechas y la correspondencia con la serie `PD38026MD` del BCRP. Las diferencias entre ambas fuentes se documentarán sin asumir que representan series idénticas.
 
 ## 5. Consideraciones de tratamiento
 
@@ -48,15 +52,16 @@ El índice objetivo identificado es `SPBVGPT`, correspondiente a S&P/BVL Peru Ge
 3. No completar automáticamente los valores faltantes sin justificación metodológica.
 4. Considerar que la tasa de referencia del BCRP puede permanecer constante entre decisiones de política monetaria.
 5. Considerar las diferencias entre los calendarios bursátiles de Perú y Estados Unidos.
-6. Verificar la correspondencia histórica entre el índice SMV y la serie bursátil del BCRP.
+6. Para integrar las series de distinta procedencia, se utilizará una fecha común como clave temporal. Se documentarán las fechas sin observación y las diferencias entre calendarios de negociación, sin completar automáticamente los valores faltantes.
+7. Verificar la correspondencia histórica entre el índice SMV y la serie bursátil del BCRP.
 
 ## 6. Pendientes de verificación
 
-- Cobertura histórica 2010–2025 del índice `SPBVGPT`.
-- Método de consulta por rangos de fechas de la API de índices SMV.
-- Correspondencia entre `SPBVGPT` y `PD38026MD`.
+- Cobertura histórica 2010–2025 del índice `SPBLPGPT`.
+- Método de extracción histórica de la API de índices SMV.
+- Correspondencia entre `SPBLPGPT` y `PD38026MD`.
 - Unidades y frecuencia definitivas de las series BCRP.
 - Método de descarga programática de `VIXCLS`.
-- Tratamiento definitivo de fechas no coincidentes y observaciones faltantes.
+- Tratamiento de fechas no coincidentes y observaciones faltantes.
 
 **Nota:** las variables y definiciones se documentan según la información identificada hasta el momento. Los elementos no confirmados permanecen señalados como pendientes.

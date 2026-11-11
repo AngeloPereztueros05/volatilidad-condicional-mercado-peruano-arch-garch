@@ -26,7 +26,7 @@ Modelar la volatilidad condicional del rendimiento diario del índice bursátil 
 
 | Institución | Serie o identificador | Variable | Estado |
 |---|---|---|---|
-| SMV | SPBVGPT | S&P/BVL Peru General | Identificada; cobertura histórica pendiente |
+| SMV | SPBLPGPT | S&P/BVL Peru General | Identificada; cobertura histórica pendiente |
 | BCRP | PD38026MD | Índice General Bursátil BVL | Correspondencia con índice SMV pendiente |
 | BCRP | PD04638PD | Tipo de cambio interbancario, venta | Identificada |
 | BCRP | PD12301MD | Tasa de referencia de política monetaria | Identificada |
@@ -37,8 +37,8 @@ Modelar la volatilidad condicional del rendimiento diario del índice bursátil 
 ## 6. Estructura del proyecto
 
 - `codigo/`: scripts de extracción, limpieza y análisis.
-- `datos_crudos/`: archivos originales descargados de las fuentes.
-- `datos_procesados/`: base integrada y depurada mediante código.
+- `datos crudos/`: archivos originales descargados de las fuentes.
+- `datos procesados/`: base integrada y depurada mediante código.
 - `salidas/`: tablas, gráficos y resultados del análisis.
 
 ## 7. Orden previsto de ejecución
@@ -50,19 +50,32 @@ Modelar la volatilidad condicional del rendimiento diario del índice bursátil 
 
 ## 8. Entorno de ejecución
 
-- Lenguaje: Python.
-- Versión de Python: PENDIENTE DE DEFINIR.
-- Dependencias: se especificarán en `requirements.txt`.
-- Sistema operativo utilizado: Windows.
+- Lenguaje de programación: Python.
+- Versión de Python: 3.14.7.
+- Gestor de dependencias: pip.
+- Entorno virtual: .venv.
+- Dependencias: bibliotecas y versiones especificadas en requirements.txt.
+- Sistema operativo de desarrollo: Windows.
+- Editor de código: Visual Studio Code.
+
 
 ## 9. Reproducibilidad
 
-Los datos crudos se conservarán sin modificaciones. La base procesada será generada mediante los scripts del proyecto.
+Los datos crudos se conservarán sin modificaciones. La base de datos procesada será generada mediante la ejecución secuencial de los scripts del proyecto. Para facilitar la reproducción del procedimiento en otros equipos, se utilizará un entorno virtual de Python y las dependencias estarán registradas en el archivo requirements.txt.
 
-- Fecha de extracción: PENDIENTE.
-- Hash SHA-256 de la base procesada: PENDIENTE.
-- Repositorio GitHub: PENDIENTE.
+- **Fecha de extracción piloto:** 11/11/2026 (VERIFICAR con la bitácora).
+- **Fecha de extracción definitiva:** pendiente.
+- **Hash SHA-256 de la base procesada:** pendiente de calcular una vez generada la base de datos.
+- **Repositorio GitHub:** https://github.com/AngeloPerezTueros05/volatilidad-condicional-mercado-peruano-arch-garch
+
 
 ## 10. Estado del proyecto
 
-Actualmente se encuentra en la fase de validación de fuentes y preparación de la estructura de archivos. La extracción automatizada y el análisis econométrico aún no se han iniciado.
+Se completó una prueba piloto de extracción histórica mediante el
+endpoint de índices de la SMV para enero de 2017. Se realizaron
+22 consultas individuales, todas con HTTP 200 y código de respuesta
+SMV 0, identificándose el índice SPBLPGPT en las 22 consultas.
+
+La extracción histórica completa para el periodo 2010–2025,
+la integración de las fuentes, la limpieza de datos y el análisis
+econométrico permanecen pendientes.
