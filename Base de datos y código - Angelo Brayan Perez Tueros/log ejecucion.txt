@@ -1,4 +1,4 @@
-BITÁCORA DE EJECUCIÓN DEL PROYECTO
+PROYECTO SEGUNDA UNIDAD
 ==================================
 
 Estudiante: Angelo Brayan Perez Tueros
@@ -12,7 +12,7 @@ Fecha de corte: 2025-12-31
 REGISTRO DE EXTRACCIONES
 -----------------------
 
-Fecha y hora:
+Fecha y hora de ejecución (AAAA-MM-DD HH:MM:SS, zona horaria):
 Fuente:
 Endpoint o URL:
 Variable o serie:
@@ -28,8 +28,372 @@ No registrar extracciones que todavía no se hayan realizado.
 
 CONTROL DE EJECUCIONES
 ----------------------
-Numero de ejecucion:
-Nombre del script:
-Version de Python:
-Sistema operativo:
-Resultado de la ejecucion:
+Fecha y hora de inicio:
+Fecha y hora de finalización:
+Duración de la ejecución:
+Incidencias o errores:
+
+REGISTRO DE EXTRACCIÓN
+=====================
+Fecha y hora: 2026-11-11T13:39:19-05:00
+Fuente: Banco Central de Reserva del Perú
+Endpoint: https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/2010-1-1/2025-12-31/esp
+Variable o serie: tipo_cambio (PD04638PD)
+Periodo solicitado: 2010-1-1 a 2025-12-31
+Registros descargados: 4174
+Valores faltantes: 196
+Código HTTP: 200
+Estado: Exitoso
+Observaciones: Serie: Tipo de cambio - TC Interbancario (S/ por US$) - Venta. Archivo: datos_crudos_tipo_cambio_2023200389L.json.
+
+
+REGISTRO DE EXTRACCIÓN
+=====================
+Fecha y hora: 2026-11-11T13:39:22-05:00
+Fuente: Banco Central de Reserva del Perú
+Endpoint: https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD38026MD/json/2010-1-1/2025-12-31/esp
+Variable o serie: indice_general_bursatil_bvl (PD38026MD)
+Periodo solicitado: 2010-1-1 a 2025-12-31
+Registros descargados: 4174
+Valores faltantes: 67
+Código HTTP: 200
+Estado: Exitoso
+Observaciones: Serie: Indicadores bursátiles - Índice General Bursátil BVL (índice). Archivo: datos_crudos_indice_general_bursatil_bvl_2023200389L.json.
+
+
+REGISTRO DE EXTRACCIÓN
+=====================
+Fecha y hora: 2026-11-11T13:39:24-05:00
+Fuente: Banco Central de Reserva del Perú
+Endpoint: https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD12301MD/json/2010-1-1/2025-12-31/esp
+Variable o serie: tasa_referencia (PD12301MD)
+Periodo solicitado: 2010-1-1 a 2025-12-31
+Registros descargados: 4174
+Valores faltantes: 106
+Código HTTP: 200
+Estado: Exitoso
+Observaciones: Serie: Tasas de interés - Tasa de Referencia de la Política Monetaria. Archivo: datos_crudos_tasa_referencia_2023200389L.json.
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T16:58:54-05:00
+Fecha consultada: 04/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=04%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170104_2023200389L_165858_324592.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T16:58:59-05:00
+Fecha consultada: 04/01/2019
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=04%2F01%2F2019
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20190104_2023200389L_165902_212278.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T16:59:03-05:00
+Fecha consultada: 04/01/2021
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=04%2F01%2F2021
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20210104_2023200389L_165906_142519.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T16:59:07-05:00
+Fecha consultada: 04/01/2023
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=04%2F01%2F2023
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20230104_2023200389L_165910_019888.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T16:59:11-05:00
+Fecha consultada: 06/01/2025
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=06%2F01%2F2025
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20250106_2023200389L_165913_918749.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:06-05:00
+Fecha consultada: 02/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=02%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170102_2023200389L_172409_792816.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:10-05:00
+Fecha consultada: 03/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=03%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170103_2023200389L_172413_782217.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:14-05:00
+Fecha consultada: 04/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=04%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170104_2023200389L_172417_641517.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:18-05:00
+Fecha consultada: 05/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=05%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170105_2023200389L_172421_479718.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:22-05:00
+Fecha consultada: 06/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=06%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170106_2023200389L_172425_332291.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:26-05:00
+Fecha consultada: 09/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=09%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170109_2023200389L_172429_197557.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:30-05:00
+Fecha consultada: 10/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=10%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170110_2023200389L_172433_043246.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:34-05:00
+Fecha consultada: 11/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=11%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170111_2023200389L_172436_872884.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:37-05:00
+Fecha consultada: 12/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=12%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170112_2023200389L_172440_742239.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:41-05:00
+Fecha consultada: 13/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=13%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170113_2023200389L_172444_603559.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:45-05:00
+Fecha consultada: 16/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=16%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170116_2023200389L_172448_498638.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:49-05:00
+Fecha consultada: 17/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=17%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170117_2023200389L_172452_354749.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:53-05:00
+Fecha consultada: 18/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=18%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170118_2023200389L_172456_233727.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:24:57-05:00
+Fecha consultada: 19/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=19%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170119_2023200389L_172500_117116.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:01-05:00
+Fecha consultada: 20/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=20%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170120_2023200389L_172504_013686.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:05-05:00
+Fecha consultada: 23/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=23%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170123_2023200389L_172507_922987.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:08-05:00
+Fecha consultada: 24/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=24%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170124_2023200389L_172511_806194.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:12-05:00
+Fecha consultada: 25/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=25%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170125_2023200389L_172515_703627.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:16-05:00
+Fecha consultada: 26/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=26%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170126_2023200389L_172519_612078.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:20-05:00
+Fecha consultada: 27/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=27%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170127_2023200389L_172523_490762.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:24-05:00
+Fecha consultada: 30/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=30%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170130_2023200389L_172527_365007.json
+
+
+REGISTRO DE EXTRACCIÓN SMV
+==========================
+Fecha y hora: 2026-11-11T17:25:28-05:00
+Fecha consultada: 31/01/2017
+Endpoint: https://mvnet.smv.gob.pe/SMV.OData.Api/api/valores/Indices?sFechaIndice=31%2F01%2F2017
+Código HTTP: 200
+Código SMV: 0
+Estado: EXITO
+Índice encontrado: SPBLPGPT
+Observaciones: Se encontraron 1 registros del índice objetivo. Archivo original: datos_crudos_smv_indices_20170131_2023200389L_172531_250218.json
